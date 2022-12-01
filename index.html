@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آکادمی آریا</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- START HEADER -->
+    <header>
+        <!-- logo -->
+        <div class="logo-header">
+            <img src="img/logo.jpg" alt="">
+        </div>
+        <!-- menu-bar -->
+        <nav class="menu">
+            <!-- toggle -->
+            <div class="toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul>
+                <li><a href="#">درباره موسسه</a></li>
+                <li><a href="#"> آموزش <i class="fa fa-sort-desc"></i></a>
+                    <!-- dropdown -->
+                    <ul class="sub-menu">
+                        <li><a href="#">بخش یک</a></li>
+                        <li><a href="#">بخش دو</a></li>
+                        <li><a href="#">بخش سه</a></li>
+                        <li><a href="#">بخش چهار</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">مراکز تخصصی <i class="fa fa-sort-desc"></i></a><!-- dropdown -->
+                    <ul class="sub-menu">
+                        <li><a href="#">بخش یک</a></li>
+                        <li><a href="#">بخش دو</a></li>
+                        <li><a href="#">بخش سه</a></li>
+                        <li><a href="#">بخش چهار</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">مشاوره و پژوهش <i class="fa fa-sort-desc"></i></a><!-- dropdown -->
+                    <ul class="sub-menu">
+                        <li><a href="#">بخش یک</a></li>
+                        <li><a href="#">بخش دو</a></li>
+                        <li><a href="#">بخش سه</a></li>
+                        <li><a href="#">بخش چهار</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">تقویم آموزشی <i class="fa fa-sort-desc"></i></a><!-- dropdown -->
+                    <ul class="sub-menu">
+                        <li><a href="#">بخش یک</a></li>
+                        <li><a href="#">بخش دو</a></li>
+                        <li><a href="#">بخش سه</a></li>
+                        <li><a href="#">بخش چهار</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">پنل دانشجویی <i class="fa fa-sort-desc"></i></a><!-- dropdown -->
+                    <ul class="sub-menu">
+                        <li><a href="#">بخش یک</a></li>
+                        <li><a href="#">بخش دو</a></li>
+                        <li><a href="#">بخش سه</a></li>
+                        <li><a href="#">بخش چهار</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- login -->
+        <div class="login">
+            <a href="#">ورود / عضویت</a>
+        </div>
+    </header>
+    <!-- END HEADER -->
+    <!-- START SLIDER -->
+    <!-- END SLIDER -->
+    <!-- START JAVASCRIPT -->
+    <script src="js/app.js"></script>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $(".menu .toggle ").click(function () {
+            $(".menu ul").slideToggle();
+            $(".menu ul .sub-menu").css("display", "none");
+        });
+        $(".menu ul li").click(function () {
+            $(this).find(".sub-menu").slideToggle();
+        });
+        $(window).resize(function () {
+            if ($(window).width() > 992) {
+                $(".menu ul").removeAttr("style");
+            }
+        })
+    </script>
+</body>
+
+</html>
